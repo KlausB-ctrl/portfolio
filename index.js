@@ -43,8 +43,3 @@ MESSAGE_TEXTAREA.addEventListener("input", (e) => {
 });
 
 var submitted = false;
-
-$('#gform').on('submit', function(e) {
-    $('#gform *').fadeOut(2000);
-    $('#gform').prepend('Your submission has been processed...');
-});
