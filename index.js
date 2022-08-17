@@ -41,5 +41,3 @@ MESSAGE_TEXTAREA.addEventListener("input", (e) => {
     CHARACTER_COUNTER.innerText = `${charsLeft} characters`;
     console.log(charsLeft);
 });
-
-var submitted = false;
