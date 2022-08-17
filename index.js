@@ -41,3 +41,10 @@ MESSAGE_TEXTAREA.addEventListener("input", (e) => {
     CHARACTER_COUNTER.innerText = `${charsLeft} characters`;
     console.log(charsLeft);
 });
+
+var submitted = false;
+
+$('#gform').on('submit', function(e) {
+    $('#gform *').fadeOut(2000);
+    $('#gform').prepend('Your submission has been processed...');
+});
