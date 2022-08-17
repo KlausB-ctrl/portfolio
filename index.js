@@ -41,3 +41,10 @@ MESSAGE_TEXTAREA.addEventListener("input", (e) => {
     CHARACTER_COUNTER.innerText = `${charsLeft} characters`;
     console.log(charsLeft);
 });
+
+let thankyouMessage = document.getElementById("thankyou");
+
+handleFormSubmit = (e) => {
+    thankyouMessage.style.visibility = "visible";
+    document.getElementById("gform").reset();
+}

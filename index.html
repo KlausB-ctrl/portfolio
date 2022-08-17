@@ -100,14 +100,16 @@
             <h1>Contact Me</h1>
             <p>Get in touch for whatever reason. Job opportunities, harsh criticism or a friendly chat: all is welcome!</p>
             <div class="contact__form">
-                <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfADTx9K5Hi1h286kUdlmwWVZ7XQMHYl6SW62mcSLVZ3c_K_g/formResponse?">
-                    <input type="text" name="entry.246067341" placeholder="Name:">
-                    <input type="email" name="entry.1842975184" placeholder="Email:">
+                <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfADTx9K5Hi1h286kUdlmwWVZ7XQMHYl6SW62mcSLVZ3c_K_g/formResponse?" target="dummyframe" onsubmit="handleFormSubmit()">
+                    <input type="text" name="entry.246067341" placeholder="Name:" required>
+                    <input type="email" name="entry.1842975184" placeholder="Email:" required>
                     <input type="text" name="entry.1973599488" placeholder="Subject (optional):">
-                    <textarea id="message__textarea" name ="entry.2133559997" placeholder="Message:" maxlength="1000"></textarea>
+                    <textarea id="message__textarea" name ="entry.2133559997" placeholder="Message:" maxlength="1000" required></textarea>
                     <p id="character__counter">1000 characters</p>
                     <button type="submit" name="submit">SEND</button>
+                    <p id="thankyou">Thank you for your message!</p>
                 </form>
+                <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
                 <div class="contact__form__links">
                     <h5>LINKS:</h5>
                     <ul>

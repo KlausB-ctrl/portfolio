@@ -344,6 +344,10 @@ textarea {
     text-decoration: underline;
 }
 
+#thankyou {
+    color: green;
+    visibility: hidden;
+}
 
 @media only screen and (max-width: 1920px) {
     .project__content {
