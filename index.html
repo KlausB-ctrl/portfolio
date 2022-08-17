@@ -100,13 +100,13 @@
             <h1>Contact Me</h1>
             <p>Get in touch for whatever reason. Job opportunities, harsh criticism or a friendly chat: all is welcome!</p>
             <div class="contact__form">
-                <form>
-                    <input placeholder="Name:">
-                    <input placeholder="Email:">
-                    <input placeholder="Subject (optional):">
-                    <textarea id="message__textarea" placeholder="Message:" maxlength="1000"></textarea>
+                <form action="contact-form.php" method="post">
+                    <input type="text" name="name" placeholder="Name:">
+                    <input type="email" name="email" placeholder="Email:">
+                    <input type="text" name="subject" placeholder="Subject (optional):">
+                    <textarea id="message__textarea" name ="message" placeholder="Message:" maxlength="1000"></textarea>
                     <p id="character__counter">1000 characters</p>
-                    <button>SEND</button>
+                    <button type="submit" name="submit">SEND</button>
                 </form>
                 <div class="contact__form__links">
                     <h5>LINKS:</h5>

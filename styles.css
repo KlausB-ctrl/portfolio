@@ -232,7 +232,7 @@ button:hover {
 #projects {
     height: fit-content;
     background-color: #F8F9FA;
-
+    position: relative;
     overflow-x: hidden;
 }
 
