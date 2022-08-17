@@ -30,3 +30,14 @@ const FADE_RIGHT_OBSERVER = new IntersectionObserver(entries => {
     })
 });
 FADE_RIGHT_OBSERVER.observe(document.getElementsByClassName("project__content__item")[1]);
+
+const MESSAGE_TEXTAREA = document.getElementById("message__textarea");
+const CHARACTER_COUNTER = document.getElementById("character__counter");
+
+const MAXIMUM_CHARS = 1000;
+let charsLeft;
+MESSAGE_TEXTAREA.addEventListener("input", (e) => {
+    charsLeft = MAXIMUM_CHARS - MESSAGE_TEXTAREA.value.length;
+    CHARACTER_COUNTER.innerText = `${charsLeft} characters`;
+    console.log(charsLeft);
+});

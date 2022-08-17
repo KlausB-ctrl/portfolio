@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="gb-en">
 <head>
-<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" initial-scale="1">
 <title>Ryan Jackson</title>
 <link rel="stylesheet" href="styles.css">
 <script src="index.js" defer></script>
@@ -61,7 +61,9 @@
                         Brian Tracy&#8217s book &#8217Eat That Frog&#8217 preaches the value of doing your hardest task for the day
                          as soon as you start working. This to-do list is built using HTML, CSS and React.js.
                     </p>
-                    <a href='https://klausb-ctrl.github.io/eat-that-frog/' target="_blank">VISIT SITE</a>
+                    <div class="project__link">
+                        <a href='https://klausb-ctrl.github.io/eat-that-frog/' target="_blank">VISIT SITE</a>
+                    </div>
                 </div>
             </div>
             <div class="project__content__item">
@@ -70,7 +72,9 @@
                     <p>This was my first foray into using APIs, fetch calls and promises. The end result is a search engine for 
                         cocktails which gives their ingredients and instructions on how to make them.
                     </p>
-                    <a href='https://klausb-ctrl.github.io/mixr/' target="_blank">VISIT SITE</a>
+                    <div class="project__link">
+                        <a href='https://klausb-ctrl.github.io/mixr/' target="_blank">VISIT SITE</a>
+                    </div>
                 </div>
                 <img src="./images/projects/mixr.PNG">
             </div>
@@ -79,7 +83,9 @@
                 <div class="project__content__item__text">
                     <h2>ML Strength</h2>
                     <p>This is a multi-page website that I created for my first assessment piece. It was made using HTML, CSS and JavaScript.</p>
-                    <a href='https://klausb-ctrl.github.io/ml-strength/' target="_blank">VISIT SITE</a>
+                    <div class="project__link">
+                        <a href='https://klausb-ctrl.github.io/ml-strength/' target="_blank">VISIT SITE</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -98,8 +104,8 @@
                     <input placeholder="Name:">
                     <input placeholder="Email:">
                     <input placeholder="Subject (optional):">
-                    <textarea placeholder="Message:"></textarea>
-                    <p>1000 characters</p>
+                    <textarea id="message__textarea" placeholder="Message:" maxlength="1000"></textarea>
+                    <p id="character__counter">1000 characters</p>
                     <button>SEND</button>
                 </form>
                 <div class="contact__form__links">

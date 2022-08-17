@@ -152,7 +152,7 @@ button:hover {
 }
 
 #about {
-    height: 50vh;
+    height: fit-content;
     position: relative;
 }
 
@@ -182,6 +182,7 @@ button:hover {
     justify-content: center;
     width: 50%;
     height: 100%;
+    padding: 200px 0;
     margin: auto;
     font-size: 1.6em;
     line-height: 1.6em;
@@ -231,13 +232,14 @@ button:hover {
 #projects {
     height: fit-content;
     background-color: #F8F9FA;
-    position: relative;
+
+    overflow-x: hidden;
 }
 
 .project__content {
     width: 60%;
     margin: auto;
-    padding: 200px;
+    padding: 200px 0;
     font-size: 1.6em;
     line-height: 1.6em;
 }
@@ -340,4 +342,155 @@ textarea {
 .contact__form__links a:hover {
     color: #212529;
     text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 1920px) {
+    .project__content {
+        width: 80%;
+    }
+
+    .contact__content {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .about__content, #about nav {
+        width: 60%;
+    }
+
+    .home__top__content, .home__bottom h5, .home__bottom a {
+        left: 10vw;
+    }
+
+    .project__content {
+        width: 90%;
+    }
+
+    .contact__content {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1455px) {
+    .project__content {
+        width: 90%;
+    }
+
+    .project__content__item {
+        flex-direction: column;
+        background-color: white;
+        margin-bottom: 100px;
+        padding: 0 0 70px 0;
+        border: none;
+    }
+
+    .project__content__item img {
+        max-width: 100%;
+    }
+
+    .project__content__item__text {
+        width: 80%;
+        margin: auto;
+        padding-bottom: 70px;
+    }
+
+    .project__link {
+        width: 100%;
+        height: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .fade-right-animation {
+        flex-direction: column-reverse;
+    }
+
+    .contact__content {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .about__content, #about nav {
+        width: 80%;
+    }
+ 
+    #contact {
+        padding: 100px 0;
+    }
+
+    .contact__content {
+        width: 90%;
+    }
+
+    .contact__form {
+        flex-direction: column;
+    }
+
+    .contact__form form {
+        width: 100%;
+    }
+
+    input, textarea {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .home__top__content {
+        font-size: 0.6em;
+        left: 10%;
+        width: 85%;
+        margin: auto;
+    }
+
+    .home__bottom h5 {
+        position: absolute;
+        margin: 0%;
+        top: 10px;
+        left: 10%;
+        width: 85%;
+        font-weight: 100;
+    }
+
+    #about nav {
+        width: 90%;
+    }
+
+    .about__content {
+        padding: 100px 0;
+        width: 90%;
+    }
+
+    .project__content {
+        width: 90%;
+    }
+
+    .project__content__item {
+        flex-direction: column;
+        background-color: white;
+        margin-bottom: 100px;
+        padding: 0 0 70px 0;
+        border: none;
+    }
+
+    .project__content__item img {
+        max-width: 100%;
+    }
+
+    .project__content__item__text {
+        width: 80%;
+        margin: auto;
+        padding-bottom: 70px;
+    }
+
+    .project__link {
+        width: 100%;
+        height: 10px;
+        display: flex;
+        justify-content: center;
+    }
 }
